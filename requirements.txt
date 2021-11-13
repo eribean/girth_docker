@@ -1,0 +1,5 @@
+numpy==1.20.1
+scipy==1.7.1
+pymc3==3.11.4
+girth==0.8.0
+girth_mcmc==0.6.0
