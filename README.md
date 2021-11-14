@@ -25,11 +25,11 @@ A docker image can be found at DockerHub, or build your own.
 ## Build
 
 ```sh
-docker build --rm -t Girth-Examples .
+docker build --rm -t girth-examples .
 ```
 
 ## Run
 
 ```sh
-docker run -it --init --rm -p8080:8080 Girth-Examples
+docker run -it --init --rm -p8080:8080 girth-examples
 ```
