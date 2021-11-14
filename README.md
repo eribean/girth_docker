@@ -20,7 +20,7 @@ Estimate the latent trait distribution using the MML methods. Useful for when yo
 
 # Installation
 
-A docker image can be found at DockerHub, or build your own.
+A docker image can be found at [DockerHub](https://hub.docker.com/repository/docker/eribean/girth-examples), or build your own.
 
 ## Build
 
