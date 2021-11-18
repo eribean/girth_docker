@@ -25,11 +25,13 @@ WORKDIR /home/girthuser
 # Copy the requirements
 COPY --chown=girthuser:girthuser ./requirements.txt requirements.txt
 
+ENV PYTHONPYCACHEPREFIX="/home/girthuser/.cache/cpython/"
 ENV PATH="/home/girthuser/.local/bin:${PATH}"
 
 RUN pip install --no-cache-dir --user -r requirements.txt \
   && pip install --no-cache-dir --user jupyterlab \
-  && rm requirements.txt
+  && rm requirements.txt \
+  && rm -rf .cache 
 
 # Get the notebooks
 COPY --chown=girthuser:girthuser notebooks notebooks
